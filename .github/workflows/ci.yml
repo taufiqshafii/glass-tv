@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -53,4 +54,3 @@ jobs:
         with:
           name: glass-tv-apk
           path: launcher/app/build/outputs/apk/release/app-release.apk
-          
